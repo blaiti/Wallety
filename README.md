@@ -1,10 +1,10 @@
-# Waletty - Budget Tracker
+# Wallety - Budget Tracker
 
 ![version](https://img.shields.io/badge/version-1.0.0-blue) ![licence](https://img.shields.io/badge/licence-MIT-blue)
 
 Wallety is a budget tracker for personal finance and budget planning.
 
-![Waletty Cover](https://user-images.githubusercontent.com/32510139/167295968-b681b058-6978-408c-bb48-865e770a53e0.jpg)
+![Wallety Cover](https://user-images.githubusercontent.com/32510139/167453860-a52f456b-ed6c-48b4-883a-a03a91ecc510.jpg)
 
 ## Table of Contents
 - [Screenshots](#screenshots)
@@ -16,9 +16,10 @@ Wallety is a budget tracker for personal finance and budget planning.
 - [Color Reference](#color-reference)
 - [Author](#author)
 - [License](#license)
+
 ## Screenshots
 
-![Waletty Presentation](https://user-images.githubusercontent.com/32510139/167295934-703955b3-0fd8-4a9b-a1b0-15c451930f5b.jpg)
+![Wallety Presentation](https://user-images.githubusercontent.com/32510139/167453779-99205f97-fc29-4c9e-a3d3-0eb19c668550.jpg)
 
 ## Tech Stack
 
@@ -77,7 +78,7 @@ To generate .aab file run
 Within the download you'll find the following directories and files:
 
 ```bash
-Waletty
+Wallety
 .
 ├── index.js
 ├── app.json
@@ -177,5 +178,5 @@ Waletty
 
 ## License
 
-[MIT](https://github.com/blaiti/Waletty/blob/main/LICENSE)
+[MIT](https://github.com/blaiti/Wallety/blob/main/LICENSE)
 
