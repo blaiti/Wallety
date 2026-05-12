@@ -1,89 +1,135 @@
 # Wallety - Budget Tracker
 
-![version](https://img.shields.io/badge/version-1.0.0-blue) ![licence](https://img.shields.io/badge/licence-MIT-blue)
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
-Wallety is a budget tracker for personal finance and budget planning.
+Wallety is a modern personal finance and budget tracking app built with React Native.
+
+Track your income and expenses, manage savings goals, and plan your budget with a clean and intuitive mobile experience.
+
+---
+
+## 📱 Download
+
+- Android (Google Play): https://play.google.com/store/apps/details?id=com.wallety
+<!-- Add App Store link here if available -->
+
+---
 
 ![Wallety Cover](https://user-images.githubusercontent.com/32510139/167453860-a52f456b-ed6c-48b4-883a-a03a91ecc510.jpg)
 
-## Table of Contents
-- [Screenshots](#screenshots)
-- [Tech Stack](#tech-stack)
-- [Quick Start](#quick-start)
-- [Run Locally](#run-locally)
-- [Deployment](#deployment)
-- [File Structure](#file-structure)
-- [Color Reference](#color-reference)
-- [Author](#author)
-- [License](#license)
+---
 
-## Screenshots
+## 📑 Table of Contents
+
+- [Screenshots](#-screenshots)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Quick Start](#-quick-start)
+- [Run Locally](#-run-locally)
+- [Build Release](#-build-release)
+- [Project Structure](#-project-structure)
+- [Color Reference](#-color-reference)
+- [Author](#-author)
+- [License](#-license)
+
+---
+
+## 📸 Screenshots
 
 ![Wallety Presentation](https://user-images.githubusercontent.com/32510139/167453779-99205f97-fc29-4c9e-a3d3-0eb19c668550.jpg)
 
-## Tech Stack
+---
 
-**Frontend:** React Native
+## ✨ Features
 
-**Environment:** Android, iOS
+- Track income and expenses
+- Budget planning
+- Savings goals management
+- Beautiful charts and analytics
+- Local database storage
+- Clean and modern UI
+- Cross-platform support
 
+---
 
-## Quick start
+## ⚙️ Tech Stack
 
-Clone the repo
-```bash
-  git clone https://github.com/blaiti/waletty
-```
+### Frontend
 
-Install Waletty with npm
+- React Native
 
-```bash
-  cd Waletty
-  npm install
-```
-    
-## Run Locally
+### Platforms
 
-To run locally on Android, run the following command
+- Android
+- iOS
 
-```bash
-  npx react-native run-android
-```
+---
 
-To run locally on iOS, run the following command
+## 🚀 Quick Start
 
-```bash
-  npx react-native run-ios
-```
-
-## Deployment
-
-To generate .apk file run
+Clone the repository:
 
 ```bash
-  cd android
-  ./gradlew assembleRelease
+git clone https://github.com/blaiti/Wallety.git
 ```
 
-To generate .aab file run
+Go to the project directory:
 
 ```bash
-  cd android
-  ./gradlew bundleRelease
+cd Wallety
 ```
 
+Install dependencies:
 
-## File Structure
+```bash
+npm install
+```
 
-Within the download you'll find the following directories and files:
+---
+
+## 🧪 Run Locally
+
+### Android
+
+```bash
+npx react-native run-android
+```
+
+### iOS
+
+```bash
+npx react-native run-ios
+```
+
+---
+
+## 📦 Build Release
+
+### Generate APK
+
+```bash
+cd android
+./gradlew assembleRelease
+```
+
+### Generate AAB
+
+```bash
+cd android
+./gradlew bundleRelease
+```
+
+---
+
+## 🗂️ Project Structure
 
 ```bash
 Wallety
-.
 ├── index.js
 ├── app.json
 ├── package.json
-├── package_lock.json
+├── package-lock.json
 ├── babel.config.js
 ├── metro.config.js
 ├── android
@@ -92,91 +138,38 @@ Wallety
     ├── App.js
     ├── assets
     │   ├── fonts
-    │   │   ├── Gilroy-Regular.ttf
-    │   │   └── Gilroy-SemiBold.ttf
     │   └── images
-    │       └── logo.png
     ├── components
-    │   ├── Bar
-    │   │   └── index.js
-    │   ├── Button
-    │   │   └── index.js
-    │   ├── Cards
-    │   │   ├── BalanceCard
-    │   │   │   └── index.js
-    │   │   ├── MoneyBoxCard
-    │   │   │   └── index.js
-    │   │   ├── NotificationCard
-    │   │   │   └── index.js
-    │   │   ├── PieCard
-    │   │   │   └── index.js
-    │   │   └── TransactionCard
-    │   │       └── index.js
-    │   ├── CircularProgress
-    │   │   └── index.js
-    │   └── Headers
-    │       ├── BackHeader
-    │       │   └── index.js
-    │       ├── BlockText
-    │       │   └── index.js
-    │       └── HomeHeader
-    │           └── index.js
     ├── config
-    │   └── routes.js
     ├── context
-    │   ├── auth-context.js
-    │   └── auth-provider.js
     ├── dbHelpers
-    │   ├── moneyboxHelper.js
-    │   ├── openDB.js
-    │   └── TransactionHelper.js
     ├── navigations
-    │   └── index.js
     ├── screens
-    │   ├── auth
-    │   │   ├── index.js
-    │   │   └── login.js
-    │   ├── home
-    │   │   ├── index.js
-    │   │   └── notifications.js
-    │   ├── moneybox
-    │   │   ├── add-moneybox.js
-    │   │   └── index.js
-    │   ├── settings
-    │   │   └── index.js
-    │   ├── splash
-    │   │   └── index.js
-    │   └── transactions
-    │       ├── add-transaction.js
-    │       ├── expense.js
-    │       ├── income.js
-    │       └── index.js
     ├── styles
-    │   ├── colors.js
-    │   ├── index.js
-    │   └── typography.js
     └── utils
-        ├── ccategories.js
-        ├── currency.js
-        └── quickActions.js
 ```
 
-## Color Reference
+---
 
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| PRIMARY | ![#256BFE](https://via.placeholder.com/10/256BFE?text=+) #256BFE |
-| WHITE | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) #FFFFFF |
-| BLACK | ![#18191E](https://via.placeholder.com/10/18191E?text=+) #18191E |
-| LIGHT_BLACK| ![#282A37](https://via.placeholder.com/10/282A37?text=+) #282A37 |
+## 🎨 Color Reference
 
+| Color        | Hex       |
+|--------------|------------|
+| PRIMARY      | `#256BFE` |
+| WHITE        | `#FFFFFF` |
+| BLACK        | `#18191E` |
+| LIGHT_BLACK  | `#282A37` |
 
-## Author
+---
 
-- [@blaiti](https://github.com/blaiti)
+## 👨‍💻 Author
 
+- GitHub: https://github.com/blaiti
 
-## License
+---
 
-[MIT](https://github.com/blaiti/Wallety/blob/main/LICENSE)
+## 📄 License
 
+This project is licensed under the MIT License.
+
+https://github.com/blaiti/Wallety/blob/main/LICENSE
